@@ -1,0 +1,175 @@
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #1e3c72, #2a5298);
+margin: 0;
+color: #333;
+}
+
+.container{
+max-width: 900px;
+margin: auto;
+padding: 20px;
+background: white;
+border-radius: 10px;
+margin-top: 30px;
+}
+
+h1{
+text-align: center;
+margin-bottom: 30px;
+}
+
+.busca-area{
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 20px;
+position: relative;
+}
+
+#busca{
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+button{
+padding: 12px;
+border: none;
+border-radius: 8px;
+background: #0072ff;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+button:hover{
+opacity: 0.9;
+}
+
+.instrumentos-container{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: 10px;
+}
+
+.instrumentos-container button{
+flex: 1 1 45%;
+background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.instrumentos-container button:hover{
+transform: scale(1.05);
+}
+
+.player-card{
+background: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+margin-top: 20px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.volume{
+width: 100%;
+margin-top: 10px;
+}
+
+.btn-remover{
+margin-top: 10px;
+background: #e74c3c;
+}
+
+.controles-globais{
+display: flex;
+gap: 10px;
+margin-top: 20px;
+}
+
+#btnParar{
+background: #e74c3c;
+}
+
+#btnLimpar{
+background: #f39c12;
+}
+
+#sugestoes{
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background: white;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+z-index: 10;
+}
+
+.item-sugestao{
+padding: 10px;
+cursor: pointer;
+}
+
+.item-sugestao:hover{
+background: #f0f0f0;
+}
+
+#btnPlayTodos{
+background: #2ecc71;
+}
+#player{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background: #111;
+padding: 15px;
+display: flex;
+gap: 15px;
+overflow-x: auto;
+box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+z-index: 999;
+}
+
+.player-card{
+min-width: 250px;
+background: #222;
+color: white;
+padding: 15px;
+border-radius: 10px;
+flex-shrink: 0;
+}
+
+.player-card h3{
+margin-top: 0;
+}
+
+.player-card audio{
+width: 100%;
+margin-top: 10px;
+}
+
+.volume{
+width: 100%;
+margin-top: 10px;
+}
+body{
+padding-bottom: 280px;
+}
+@media(max-width:768px){
+
+.instrumentos-container button{
+flex: 1 1 100%;
+}
+
+.player-card{
+min-width: 90%;
+}
+
+.controles-globais{
+flex-direction: column;
+}
+
+}
